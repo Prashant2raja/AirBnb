@@ -1,0 +1,11 @@
+// Listing.json
+{
+  "listing": {
+    "title": "Sea View Villa",
+    "description": "Beautiful place near the beach with a private balcony.",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "price": 2500,
+    "country": "India",
+    "location": "Goa"
+  }
+}

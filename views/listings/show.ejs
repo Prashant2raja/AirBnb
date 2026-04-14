@@ -1,0 +1,22 @@
+<% layout("layouts/boilerplate") %>
+
+<section class="detail-shell">
+  <div class="detail-media">
+    <img src="<%= listing.image.url %>" alt="<%= listing.title %>" class="detail-image" />
+  </div>
+
+  <div class="detail-panel">
+    <span class="section-kicker">Stay Details</span>
+    <h1><%= listing.title %></h1>
+    <p class="detail-location"><%= listing.location %>, <%= listing.country %></p>
+    <p class="detail-description"><%= listing.description %></p>
+    <div class="detail-price">&#8377; <%= listing.price.toLocaleString("en-IN") %> <span>per night</span></div>
+
+    <div class="detail-actions">
+      <a href="/listings/<%= listing._id %>/edit" class="btn home-primary-btn">Edit Listing</a>
+      <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
+        <button class="btn home-secondary-btn" type="submit">Delete Listing</button>
+      </form>
+    </div>
+  </div>
+</section>
